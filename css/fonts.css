@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'FiraSans-ExtraBold';
+  src: url('fonts/FiraSans-ExtraBold.eot');
+  src: url('fonts/FiraSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+       url('fonts/FiraSans-ExtraBold.woff') format('woff'),
+       url('fonts/FiraSans-ExtraBold.ttf')  format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FiraSans';
+  src: url('fonts/FiraSans-Regular.eot');
+  src: url('fonts/FiraSans-Regular.eot?#iefix') format('embedded-opentype'),
+       url('fonts/FiraSans-Regular.woff') format('woff'),
+       url('fonts/FiraSans-Regular.ttf')  format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FiraSans-hair';
+  src: url('fonts/FiraSans-Hair.eot');
+  src: url('fonts/FiraSans-Hair.eot?#iefix') format('embedded-opentype'),
+       url('fonts/FiraSans-Hair.woff') format('woff'),
+       url('fonts/FiraSans-Hair.ttf')  format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'FiraSans-light';
+  src: url('fonts/FiraSans-Thin.eot');
+  src: url('fonts/FiraSans-Thin.eot?#iefix') format('embedded-opentype'),
+       url('fonts/FiraSans-Thin.woff') format('woff'),
+       url('fonts/FiraSans-Thin.ttf')  format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+body{
+	font-family: 'FiraSans' !important;
+}

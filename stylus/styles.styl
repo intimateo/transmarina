@@ -1,0 +1,317 @@
+/*
+Theme Name: Transmarina
+Theme URI: http://www.transmarina.com
+Author: Inti Mateo
+Author URI: http://www.imateo.com
+Description: Tema para Transmarina.com version 2015
+Version: 1.0
+*/
+
+primary-color = #23509e
+secondary-color = #00bff2
+dark-color = #011d56
+gris-color = #b2b6b7
+third-color = #128dcd
+light-gray = #d4d6d6
+
+@import 'nib'
+@import 'home'
+@import 'mediaqueries'
+
+
+
+body
+  transition opacity .2s linear
+  color #58595B !important
+  letter-spacing 0.25px
+header
+  height 700px
+  position relative
+  &.internal
+    height 560px
+    overflow hidden
+  .banner
+    height 560px
+    background: dark-color
+    position absolute
+    width 1920px
+    z-index -1
+    background-size auto
+    background-attachment fixed
+    background-position 50% 0
+
+.stage-wrapper
+  width 100%
+  position absolute
+  z-index -1
+  overflow hidden
+  height 700px
+  background: dark-color
+ 
+.stages
+  width 1920px
+  height 700px
+  position absolute
+  div
+    height 360px
+    z-index 10
+    width 105%
+    height 105%
+    position absolute
+    background-size 100% !important
+    background-repeat no-repeat
+    -webkit-transform: translate3d(0, 0, 0);
+    transform-origin 50% 50% 0
+    &:nth-child(1)
+      animation fade 18s 12s infinite, movement_right 18s 10s infinite 
+    &:nth-child(2)
+      animation fade 18s 6s infinite, movement_up 18s 4s infinite 
+    &:nth-child(3)
+      animation fade 18s 0s infinite, movement_left 16s 0s infinite 
+
+// HEADER
+.secondary-links
+    margin-top 20px
+    float right
+    li
+      list-style none
+      float left
+      margin 0
+      border-right 1px solid #fff
+      &:last-child{
+        border-right 0
+      }
+      &.menu_item_wpglobus_menu_switch
+        >a
+          display none
+        ul.sub-menu
+          padding 0
+          display block
+          margin 0 !important  
+    a
+      color gris-color
+      letter-spacing 1px
+      text-decoration none
+      padding 0 10px
+      &:hover
+        color #fff
+    .wpglobus_flag
+        background-position left center
+        padding-left 25px
+.branding
+  margin-top 100px !important
+  .slogan
+    margin-top 80px
+    font-family 'FiraSans-ExtraBold'
+    color #fff
+    font-size 3em
+    padding-left 20px
+    letter-spacing 2px
+    text-transform uppercase
+    line-height 1em
+    opacity 0.5
+  .button
+    &.white
+      background-color transparent
+      border-bottom 2px solid #fff
+      color #fff
+      text-transform uppercase
+      padding-right 6px
+      &:hover
+        border-bottom 3px solid secondary-color
+        background-color rgba(255,255,255,0.05)
+  
+  .rightside
+    padding-top 30px  
+
+.hero
+  margin-top 80px
+  color #fff;
+  h1
+    margin-bottom 0
+    font-family 'FiraSans'
+    font-size 3em 
+    opacity 0.9
+    line-height 1em
+  p
+    margin-top 4px
+    font-family 'FiraSans-light'
+    font-size 2.5em
+    opacity 0.9
+    line-height 1em
+    margin-bottom 0
+//
+
+//NAVIGATION
+.navigation
+  height 100px;
+  background-color rgba(0,0,0,0.4)
+  width 100%
+  position absolute
+  bottom 0
+  nav
+    list-style none
+    padding-top 40px
+    content " "
+    display table
+    padding-left 0
+    li
+      float left
+      padding 0 18px
+      a
+        color #fff
+        text-decoration none
+        text-transform uppercase
+        font-family 'FiraSans'
+        font-size 1.15em
+        letter-spacing 1px
+        &:hover
+        &.active
+          color secondary-color
+//
+// FOOTER
+#footer
+  background-color #73797a
+  padding 20px 0
+  color #fff
+  font-size 0.9em
+  .credits
+    font-size 0.8em
+    color #fff
+    padding-top 12px
+    text-align center
+  ul
+    margin 0
+    padding 0
+    list-style none
+    padding-top 10px
+    li
+      padding-left 20px
+      a
+        color #fff
+        text-decoration none
+        &:hover
+          color gris-color
+  a
+    color #fff
+    text-decoration none
+///
+
+//
+.contenido
+  background url('../img/background_content.jpg')
+  background-size 100% auto
+  background-position left bottom
+  background-repeat no-repeat
+  padding-bottom 30px
+  &.white-content
+    background #fff
+    padding 30px
+
+section
+  margin 100px auto !important
+  &.gray-section
+    background-color #f9f9f9
+    border-top 1px solid #e2e2e2
+    border-bottom 1px solid #e2e2e2
+    padding 50px 0
+
+.right
+  float right
+  
+h2
+  font-family 'FiraSans-light'
+  font-size 1.6em
+
+h3
+  font-family 'FiraSans-hair'
+  font-size 1.2em
+  font-size 1em
+
+h4
+  font-family 'FiraSans-ExtraBold'
+
+h1
+  font-family 'FiraSans-hair'
+  font-size 2.8em !important
+  &.title
+    text-align center
+
+strong
+  font-family 'FiraSans-ExtraBold'
+
+.button
+  padding-top 0.5em !important
+  padding-bottom 0.5em !important
+  font-family 'FiraSans-light'
+  letter-spacing 1px
+  &.blue
+    background-color primary-color
+    &:hover
+      background-color third-color
+.reset-margin
+  margin 0 !important
+.reset-padding
+  padding 0 !important
+.title-line
+  border-bottom 1px solid gris-color
+.row.item-list
+  margin-top 20px
+  margin-bottom 150px
+  &:nth-child(1)
+    margin-top 20px
+
+.tabs
+  margin-left auto !important
+.relative
+  position relative
+//
+@keyframes fade {
+  0%{
+     opacity: 1;
+  }
+  15% {
+     opacity:1;
+  }
+  25%{
+    opacity: 0;
+  }
+  90% {
+     opacity:0;
+  }
+  100% {
+     opacity:1;
+  }
+}
+@keyframes movement_up {
+  0%{ 
+    transform translateY(0)
+  }
+  100%{ 
+    transform translateY(-7%)
+  }
+}
+@keyframes movement_left {
+  0%{ 
+    transform translateX(0)
+  }
+  100%{ 
+    transform translateX(-7%)
+  }
+}
+@keyframes movement_right {
+  0%{ 
+    transform translateX(-3.5%)
+  }
+  100%{ 
+    transform translateX(0)
+  }
+}
+@keyframes movement_down {
+  0%{ 
+    transform translateY(0)
+  }
+  100%{ 
+    transform translateY(7%)
+  }
+}
